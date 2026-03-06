@@ -1,0 +1,137 @@
+/* General page styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main container */
+.home-container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Header section */
+.header {
+  width: 100%;
+  background-color: #111;
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 2px solid #222;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+/* Film form section */
+.film-form-section {
+  width: 100%;
+  background-color: #111;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+/* Film table section */
+.film-table-section {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+/* Top rated section */
+.top-rated-section {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Footer section */
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #111;
+  border-top: 2px solid #222;
+}
+
+/* TopRated cards layout */
+.top-rated-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Individual film card */
+.film-card {
+  background-color: #111;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 2px 2px 8px rgba(255,255,255,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.film-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(255,255,255,0.2);
+}
+
+.film-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.film-card h4 {
+  margin: 8px 0 4px 0;
+}
+
+.film-card p {
+  margin: 2px 0;
+}
+
+/* Delete button for cards/tables */
+.delete-button {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #ff4c4c;
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+  .film-card {
+    width: 45%;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 480px) {
+  .film-card {
+    width: 90%;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}

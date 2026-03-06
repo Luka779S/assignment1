@@ -1,0 +1,12 @@
+/* Container for the Top Rated section with vertical spacing */
+.top-rated-container {
+  margin: 20px 0;
+}
+
+/* Flex layout for the top-rated cards to wrap on smaller screens */
+.top-rated-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to move to the next line if screen is narrow */
+  justify-content: flex-start; /* Align cards to the left */
+  gap: 10px; /* Optional: spacing between cards for better layout */
+}

@@ -1,0 +1,72 @@
+/* Container for the table and filters */
+.film-table-container {
+  margin: 20px;
+}
+
+/* Filters layout: horizontal flex with spacing */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Common styling for inputs and select */
+.filter-input, .filter-select {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Specific width for number input */
+.filter-input[type="number"] {
+  width: 80px;  
+}
+
+/* Table full width, no spacing between cells */
+.film-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table cells padding and border */
+.film-table th, .film-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Table headers clickable with transition for hover effects */
+.film-table th {
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Highlight sorted column */
+.film-table th.sorted {
+  font-weight: bold;
+}
+
+/* Show ascending or descending arrow after header text */
+.film-table th.sorted.asc::after {
+  content: " ↑";
+}
+
+.film-table th.sorted.desc::after {
+  content: " ↓";
+}
+
+/* Delete button styling */
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Hover effect for delete button */
+.delete-button:hover {
+  background-color: #c0392b;
+}

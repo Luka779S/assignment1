@@ -1,0 +1,32 @@
+/* Container for each film card */
+.film-card {
+    border: 1px solid #ccc; /* light gray border */
+    border-radius: 8px; /* rounded corners */
+    padding: 10px; /* inner spacing */
+    margin: 10px; /* outer spacing between cards */
+    width: 200px; /* fixed width for consistency */
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2); /* subtle shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* smooth hover animation */
+}
+
+/* Hover effect: lift the card slightly and increase shadow */
+.film-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Image inside the film card */
+.film-card img {
+    width: 100%; /* full width of card */
+    border-radius: 4px; /* slightly rounded corners */
+}
+
+/* Title styling */
+.film-card h4 {
+    margin: 8px 0 4px 0; /* spacing around the film title */
+}
+
+/* Paragraph styling for rating, director, and format */
+.film-card p {
+    margin: 2px 0; /* small spacing between details */
+}
